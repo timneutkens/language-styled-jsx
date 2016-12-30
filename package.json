@@ -1,0 +1,12 @@
+{
+  "name": "language-styled-jsx",
+  "version": "1.0.0",
+  "description": "Styled-jsx syntax highlighting",
+  "main": "index.js",
+  "engines": {
+    "atom": "*"
+  },
+  "repository": "timneutkens/language-styled-jsx",
+  "author": "Tim Neutkens",
+  "license": "MIT"
+}

@@ -1,0 +1,44 @@
+'name': 'Styled jsx'
+'scopeName': 'styled-jsx'
+'fileTypes': ['js', 'jsx']
+'injectionSelector': 'source.js'
+'patterns': [
+  {
+    'begin': '(?:^\\s+)?(<)((?i:style)).? jsx ?\\b(?![^>]*/>)'
+    'captures':
+      '1':
+        'name': 'punctuation.definition.tag.html'
+      '2':
+        'name': 'entity.name.tag.style.html'
+      '3':
+        'name': 'punctuation.definition.tag.html'
+    'end': '(</)((?i:style))(>)(?:\\s*\\n)?'
+    'name': 'source.css.embedded.html'
+    'patterns': [
+      {
+        'include': '#tag-stuff'
+      }
+      {
+        'begin': '(>)'
+        'beginCaptures':
+          '1':
+            'name': 'punctuation.definition.tag.html'
+        'end': '(?=</(?i:style))'
+        'patterns': [
+          {
+            'include': '#embedded-code'
+          }
+          {
+            'begin': '`'
+            'end': '`'
+            'patterns': [
+              {
+                'include': 'source.css'
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
