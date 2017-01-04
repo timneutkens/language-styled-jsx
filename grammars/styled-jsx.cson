@@ -1,6 +1,6 @@
 'name': 'Styled jsx'
 'scopeName': 'styled-jsx'
-'fileTypes': ['js', 'jsx']
+'fileTypes': ['']
 'injectionSelector': 'source.js'
 'patterns': [
   {
