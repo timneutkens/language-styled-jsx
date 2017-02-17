@@ -1,6 +1,6 @@
 {
   "name": "language-styled-jsx",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Styled-jsx syntax highlighting",
   "main": "index.js",
   "engines": {
